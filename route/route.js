@@ -39,7 +39,6 @@ module.exports = {
                     open("C:\\Users\\Chris\\Desktop\\csgo.url");
                     break;
             }
-             // notice this without a callback.. // exit this nodejs process
         })
 
     }
