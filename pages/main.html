@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Main Page
+    </title>
+</head>
+
+<body>
+    <script>
+        function test(x) {
+            console.log("got click");
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'http://192.168.1.114:3000/open/'+x.id, true);
+            xhr.send();
+        }
+    </script>
+    <button id="explorer" onclick="test(this)" style="height:110px;width:110px;padding:10px"><font size="+2">Windows Explorer</font></button>
+    <button id="visual studio code" onclick="test(this)" style="height:110px;width:110px;padding:10px"><font size="+2">Visual Studio Code</font></button>
+    <button id="google chrome" onclick="test(this)" style="height:110px;width:110px;padding:10px"><font size="+2">Google Chrome</font></button>
+    <button id="overwatch" onclick="test(this)" style="height:110px;width:120px;padding:10px"><font size="+1">Overwatch</font></button>
+    <button id="spotify" onclick="test(this)" style="height:110px;width:120px;padding:10px"><font size="+2">Spotify</font></button>
+    <button id="discord" onclick="test(this)" style="height:110px;width:120px;padding:10px"><font size="+2">Discord</font></button>
+    <button id="csgo" onclick="test(this)" style="height:110px;width:120px;padding:10px"><font size="+2">CSGO</font></button>
+    
+</body>
+
+
+</html>
